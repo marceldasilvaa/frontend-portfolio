@@ -1,0 +1,31 @@
+#userProject .container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#userProject .container h1 {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#userProject .container p {
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+
+@media screen and (max-width: 600px) {
+  #userProject .container {
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+  }
+
+  #userProject .container p {
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+}

@@ -1,0 +1,136 @@
+.btn {
+  font-size: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 7px;
+  width: 130px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.251);
+}
+
+.btn-main {
+  background-color: white;
+  color: black;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  z-index: 1;
+}
+
+.btn-main::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  height: 0;
+  background-color: black;
+  transition: height 0.5s ease-out, top 0.5s ease-out;
+  z-index: -1;
+}
+
+.btn-main:hover {
+  color: white;
+  border-color: black;
+}
+
+.btn-main:hover::before {
+  height: 100%;
+  top: 0;
+}
+
+.btn-contact {
+  background-color: black;
+  color: white;
+}
+
+.btn-contact:hover {
+  color: #ccc;
+  transition: 0.5s ease-out;
+}
+
+.btn-cancel {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  color: red;
+  border-color: red;
+  transition: color 0.5s ease-out;
+  z-index: 1;
+}
+
+.btn-cancel::before {
+  content: "";
+  left: 0;
+  top: 50%;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  background-color: red;
+  transition: height 0.5s ease-out, top 0.5s ease-out;
+  z-index: -1;
+}
+
+.btn-cancel:hover {
+  color: white;
+}
+
+.btn-cancel:hover::before {
+  height: 100%;
+  top: 0;
+}
+
+.btn-to-register {
+  background-color: white;
+  color: #108a00;
+  width: 215px;
+  border: 2px solid #108a00;
+  border-radius: 8px;
+  box-shadow: none;
+  font-size: 1em;
+  padding: 10px 50px;
+}
+
+.btn-to-register:hover {
+  color: #108a00;
+  border: 2px solid #14a800;
+}
+
+.btn-register {
+  background-color: #108a00;
+  border: 2px solid #108a00;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  width: 165px;
+  padding: 5px 15px;
+}
+
+.btn-register:hover {
+  background-color: #14a800;
+  border: 2px solid #14a800;
+}
+
+.btn-login {
+  background-color: #108a00;
+  color: white;
+  border: 2px solid #108a00;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 350px;
+  padding: 10px 20px;
+}
+
+.btn-login:hover {
+  background-color: #14a800;
+  border: 2px solid #14a800;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-main,
+  .btn-contact {
+    font-size: 1em;
+  }
+}

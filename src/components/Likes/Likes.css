@@ -1,0 +1,13 @@
+#likes {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+
+#likes svg {
+  cursor: pointer;
+  font-size: 1.5em;
+  text-align: center;
+}

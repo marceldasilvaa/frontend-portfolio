@@ -1,0 +1,91 @@
+#about .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 5px;
+}
+
+#about .container h1,
+#about .container h2 {
+  text-align: center;
+  font-weight: normal;
+}
+
+#about .container h2 {
+  font-family: "Roboto Serif", serif;
+  margin-top: 1em;
+}
+
+#about .container p {
+  margin: 1em 0;
+  text-indent: 30px;
+}
+
+#skills {
+  display: flex;
+}
+
+#skills .jsAndReact,
+#skills .mongoAndNode {
+  flex: 1;
+}
+
+#skills img {
+  width: 150px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.399);
+  margin: auto;
+}
+
+.jsAndReact {
+  display: flex;
+  flex-direction: column;
+}
+
+.mongoAndNode {
+  display: flex;
+  flex-direction: column;
+}
+
+#buttonsAbout {
+  display: flex;
+  justify-content: center;
+}
+
+#buttonsAbout button {
+  margin: 5em 3em 0 3em;
+}
+
+@media screen and (max-width: 600px) {
+  #about .container {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 5px;
+  }
+
+  #about .container p {
+    font-size: 1.1em;
+    margin: 1em 0;
+    text-indent: 30px;
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #skills .jsAndReact p,
+  #skills .mongoAndNode p {
+    text-indent: 0;
+  }
+
+  #buttonsAbout {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #buttonsAbout button {
+    margin: 1em;
+  }
+}

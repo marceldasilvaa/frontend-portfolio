@@ -1,0 +1,26 @@
+#footer {
+  background-color: #ccc;
+  padding: 100px;
+  margin-top: 300px;
+}
+
+#footer p {
+  text-align: center;
+  font-weight: bold;
+}
+
+#footer p a {
+  text-decoration: none;
+  color: #0a7bcc;
+}
+
+#footer p a:hover {
+  color: #1c5174;
+  transition: ease 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  #footer {
+    margin-top: 100px;
+  }
+}

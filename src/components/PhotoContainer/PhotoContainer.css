@@ -1,0 +1,33 @@
+.showProjects {
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+.showProjects img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.showProjects #title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.showProjects #description {
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+
+.showProjects #userProject a,
+.showProjects p a {
+  color: var(--colorCel);
+  text-decoration: none;
+}
+
+.showProjects #userProject a:hover,
+.showProjects p a:hover {
+  color: var(--colorMar);
+  text-decoration: underline;
+}

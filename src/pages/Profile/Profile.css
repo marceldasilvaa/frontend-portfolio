@@ -1,0 +1,120 @@
+#profile .container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#profile .container hr {
+  display: block;
+  margin: 2em auto;
+  width: 50%;
+}
+
+#profile .container p {
+  text-align: center;
+  margin-top: 3em;
+}
+
+#profile .container p a {
+  color: var(--colorCel);
+  text-decoration: none;
+}
+
+#profile .container p a:hover {
+  text-decoration: underline;
+}
+
+#dataUserForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#dataUserForm label {
+  font-size: 1.1em;
+  text-align: left;
+  margin: 0.5em 0;
+}
+
+#dataUserForm input {
+  width: 96%;
+  height: 40px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 0 10px;
+  cursor: not-allowed;
+  transition: box-shadow 0.3s ease;
+}
+
+#dataUserForm input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#dataUserForm input:hover {
+  box-shadow: 0 0 0 2px black;
+}
+
+#dataUserForm input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px black;
+}
+
+.container #projectsUser img {
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.container #projectsUser p {
+  text-align: left;
+  margin: 10px;
+}
+
+#projectsUser h3 {
+  font-weight: bold;
+}
+
+.container #projectsUser hr {
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.editProjects {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.editProjects svg {
+  font-size: 1.5em;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.editProjects a svg:hover {
+  color: var(--colorCel);
+}
+
+.editProjects #cancel:hover {
+  color: red;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #profile .container {
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .container #projectsUser {
+    width: 80%;
+    margin: auto;
+  }
+
+  .container #projectsUser img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,83 @@
+#contact .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#contact .container h1 {
+  text-align: center;
+  margin-top: 1em;
+  font-weight: normal;
+}
+
+#contact .container .description {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.1em;
+}
+
+#contacts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+#contacts a {
+  text-decoration: none;
+}
+
+#contacts .wpp,
+#contacts .insta,
+#contacts .linkedin,
+#contacts .email {
+  border: 2px solid #cccccc;
+  padding: 100px 40px;
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.332);
+  width: 200px;
+}
+
+#contacts .wpp svg,
+#contacts .insta svg,
+#contacts .linkedin svg,
+#contacts .email svg {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8em;
+}
+
+#contacts .wpp p,
+#contacts .insta p,
+#contacts .linkedin p,
+#contacts .email p {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.wpp svg {
+  color: #1fa016;
+}
+
+.wpp p {
+  color: #1fa016;
+}
+
+.insta svg {
+  color: #833ab4;
+}
+
+.insta p {
+  color: #833ab4;
+}
+
+.linkedin svg {
+  color: #126bc4;
+}
+
+.linkedin p {
+  color: #126bc4;
+}

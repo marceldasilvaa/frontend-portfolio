@@ -1,0 +1,131 @@
+#register,
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#register .container,
+#login .container {
+  max-width: 500px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#register .container hr,
+#login .container hr {
+  margin: 1em 0;
+  color: #e9e9e9;
+}
+
+#register h2,
+#login h2 {
+  font-size: 2em;
+  font-weight: normal;
+  color: black;
+  margin: 1.5em 0 0 0;
+}
+
+#register .container form,
+#login .container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formAuth label {
+  font-size: 1.1em;
+  text-align: left;
+  margin: 0.5em 0;
+}
+
+.formAuth input {
+  width: 95%;
+  height: 40px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 0 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.formAuth input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.formAuth input:hover {
+  box-shadow: 0 0 0 2px black;
+}
+
+.formAuth input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px black;
+}
+
+.formAuth form .btn-register {
+  cursor: pointer;
+  box-shadow: none;
+  font-size: 1.1em;
+}
+
+.formAuth form .btn-login {
+  cursor: pointer;
+  box-shadow: none;
+  font-size: 1.1em;
+}
+
+.haveAccount p {
+  margin: 1em 0;
+}
+
+.haveAccount p a {
+  color: var(--colorCel);
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.haveAccount p a:hover {
+  text-decoration: underline;
+}
+
+.dontHaveAccount p {
+  color: #8b8989;
+  font-size: 1em;
+  margin: 5em 0 1em 0;
+}
+
+@media screen and (max-width: 600px) {
+  #register .container,
+  #login .container {
+    max-width: 80%;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #register .container p,
+  #login .container p {
+    margin: 1.5em 0;
+  }
+
+  #register h2,
+  #login h2 {
+    font-size: 1.8em;
+    font-weight: normal;
+    color: black;
+    margin-top: 1.5em;
+  }
+
+  .formAuth label span {
+    display: none;
+  }
+
+  .formAuth input::-webkit-input-placeholder {
+    color: #8b8989;
+  }
+
+  .message.err {
+    max-width: 300px;
+  }
+}
