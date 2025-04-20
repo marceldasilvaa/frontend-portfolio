@@ -1,5 +1,5 @@
 export const api = import.meta.env.VITE_API_URL;
-export const uploads = `${api}uploads`;
+export const uploads = `${api}/uploads`;
 
 export const requestConfig = (method, data, token = null, image = null) => {
   let config;
