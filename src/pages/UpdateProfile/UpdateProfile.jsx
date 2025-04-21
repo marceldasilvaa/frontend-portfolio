@@ -28,6 +28,7 @@ const UpdateProfile = () => {
   const [previewImage, setPreviewImage] = useState("");
 
   const { user, loading, error, message } = useSelector((state) => state.user);
+  const { error: errorProfile } = useSelector((state) => state.photo);
 
   const dispatch = useDispatch();
 
@@ -156,6 +157,7 @@ const UpdateProfile = () => {
           )}
           {error && <Message msg={error} type="error" />}
           {message && <Message msg={message} type="success" />}
+          {errorProfile && <Message msg={errorProfile} type="error" />}
         </form>
         <Link to={"/profile"}>
           <BiArrowBack />
