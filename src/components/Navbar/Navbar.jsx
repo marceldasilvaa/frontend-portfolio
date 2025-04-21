@@ -164,7 +164,6 @@ const Navbar = () => {
               <div className={`searchIcon ${isSearching ? "hidden" : ""}`}>
                 <IoIosSearch onClick={handleSearchClick} />
               </div>
-
               <div className="searchContainer">
                 <form onSubmit={handleSearch}>
                   <input
@@ -181,7 +180,12 @@ const Navbar = () => {
             </div>
           </>
         ) : (
-          <></>
+          <>
+          <div className="logo">
+              <Link to={"/"}>
+                <img src={logoPortfolio} alt="Logo" />
+              </Link>
+            </div></>
         )}
       </div>
       <hr />
