@@ -1,5 +1,6 @@
 export const api = import.meta.env.VITE_API_URL;
-export const uploads = "https://myhyuthmduqbjjvlibdc.supabase.co/storage/v1/object/public/portfolio";
+export const uploads =
+  "https://myhyuthmduqbjjvlibdc.supabase.co/storage/v1/object/public/portfolio";
 
 export const requestConfig = (method, data, token = null, image = null) => {
   let config;
