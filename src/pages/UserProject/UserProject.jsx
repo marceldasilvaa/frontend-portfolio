@@ -31,7 +31,7 @@ const PhotosUser = () => {
           <>
             {user.userProfile && (
               <img
-                src={`${uploads}/users/${user.userProfile}`}
+                src={`${uploads}/${user.userProfile}`}
                 alt={user.name}
                 className="profileImage"
               />

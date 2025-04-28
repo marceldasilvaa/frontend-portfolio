@@ -10,7 +10,7 @@ const PhotoContainer = ({ photo }) => {
   return (
     <div className="showProjects">
       {photo.image && (
-        <img src={`${uploads}/photos/${photo.image}`} alt={photo.userName} />
+        <img src={`${uploads}/${photo.image}`} alt={photo.userName} />
       )}
       <p id="title">{photo.title}</p>
       <p id="description">{photo.description}</p>

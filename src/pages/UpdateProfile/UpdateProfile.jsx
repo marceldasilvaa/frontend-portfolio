@@ -104,7 +104,7 @@ const UpdateProfile = () => {
               src={
                 previewImage
                   ? URL.createObjectURL(previewImage)
-                  : `${uploads}/users/${user.userProfile}`
+                  : `${uploads}/${user.userProfile}`
               }
               alt={user.name}
               className="profileImage"
