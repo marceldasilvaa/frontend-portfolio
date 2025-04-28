@@ -107,7 +107,7 @@ const Profile = () => {
           photos.map((photo) => (
             <div id="projectsUser" key={photo._id}>
               <img
-                src={`${uploads}/photos/${photo.image}`}
+                src={`${uploads}/${photo.image}`}
                 alt={photo.userName}
               />
               <h3>{photo.title}</h3>
