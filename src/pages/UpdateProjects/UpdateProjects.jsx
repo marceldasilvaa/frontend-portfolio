@@ -66,7 +66,7 @@ const UpdateProjects = () => {
       <div className="container">
         <h1>Atualize seu projeto</h1>
         {photo && photo.image && (
-          <img src={`${uploads}/${photo.image}`} alt={photo.userName} />
+          <img src={photo.image} alt={photo.userName} />
         )}
         <form onSubmit={handleSubmit} id="updateProjects">
           <label>
