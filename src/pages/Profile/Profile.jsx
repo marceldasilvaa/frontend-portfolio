@@ -21,7 +21,7 @@ import {
   removePhoto,
   resetMessage,
 } from "../../slices/photoSlice";
-import { uploads } from "../../utils/config";
+import { getImageUrl } from "../../utils/config";
 
 const Profile = () => {
   const [name, setName] = useState("");
@@ -107,7 +107,7 @@ const Profile = () => {
           photos.map((photo) => (
             <div id="projectsUser" key={photo._id}>
               <img
-                src={photo.image}
+                src={getImageUrl(photo.image)}
                 alt={photo.userName}
               />
               <h3>{photo.title}</h3>

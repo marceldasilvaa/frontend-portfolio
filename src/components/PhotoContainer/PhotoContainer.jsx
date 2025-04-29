@@ -1,5 +1,7 @@
 import "./PhotoContainer.css";
 
+import { getImageUrl } from "../../utils/config";
+
 // components
 import { Link } from "react-router-dom";
 
@@ -7,7 +9,7 @@ const PhotoContainer = ({ photo }) => {
   return (
     <div className="showProjects">
       {photo.image && (
-        <img src={photo.image} alt={photo.userName} />
+        <img src={getImageUrl(photo.image)} alt={photo.userName} />
       )}
       <p id="title">{photo.title}</p>
       <p id="description">{photo.description}</p>

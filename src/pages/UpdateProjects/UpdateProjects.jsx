@@ -17,7 +17,7 @@ import {
   getPhotoById,
   resetMessage,
 } from "../../slices/photoSlice";
-import { uploads } from "../../utils/config";
+import { getImageUrl } from "../../utils/config";
 
 const UpdateProjects = () => {
   const { id } = useParams();
@@ -66,7 +66,7 @@ const UpdateProjects = () => {
       <div className="container">
         <h1>Atualize seu projeto</h1>
         {photo && photo.image && (
-          <img src={photo.image} alt={photo.userName} />
+          <img src={getImageUrl(photo.image)} alt={photo.userName} />
         )}
         <form onSubmit={handleSubmit} id="updateProjects">
           <label>
