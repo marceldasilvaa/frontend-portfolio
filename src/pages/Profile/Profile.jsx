@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 // components
-import Message from "../../components/Message/Message"
+import Message from "../../components/Message/Message";
 
 // icons
 import { TfiPencil } from "react-icons/tfi";
@@ -106,10 +106,8 @@ const Profile = () => {
         {photos &&
           photos.map((photo) => (
             <div id="projectsUser" key={photo._id}>
-              <img
-                src={getImageUrl(photo.image)}
-                alt={photo.userName}
-              />
+              <img src={getImageUrl(photo.image)} alt={photo.userName} />
+              {console.log("URL montada:", getImageUrl(photo.image))}
               <h3>{photo.title}</h3>
               <p>{photo.description}</p>
               <hr />
