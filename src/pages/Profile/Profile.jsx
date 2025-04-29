@@ -107,7 +107,6 @@ const Profile = () => {
           photos.map((photo) => (
             <div id="projectsUser" key={photo._id}>
               <img src={getImageUrl(photo.image)} alt={photo.userName} />
-              {console.log("URL montada:", getImageUrl(photo.image))}
               <h3>{photo.title}</h3>
               <p>{photo.description}</p>
               <hr />

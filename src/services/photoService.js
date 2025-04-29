@@ -8,7 +8,6 @@ const postPhoto = async (data, token) => {
       .then((res) => res.json())
       .catch((err) => err);
 
-    console.log("Resposta da API:", res);
     return res;
   } catch (error) {
     console.log(error);
