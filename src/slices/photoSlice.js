@@ -180,12 +180,17 @@ export const photoSlice = createSlice({
         state.success = false;
       })
       .addCase(postPhoto.fulfilled, (state, action) => {
+        console.log("Payload recebido na action:", action.payload);
+        console.log("Valor de image:", action.payload.image);
+
         state.success = true;
         state.error = false;
         state.loading = false;
         state.photo = action.payload;
         state.photos.unshift(state.photo);
         state.message = "Projeto publicado!";
+
+        console.log("Estado após atualização:", state.photo.image);
       })
       .addCase(postPhoto.rejected, (state, action) => {
         state.loading = false;
