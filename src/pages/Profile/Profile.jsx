@@ -21,7 +21,7 @@ import {
   removePhoto,
   resetMessage,
 } from "../../slices/photoSlice";
-import { getImageUrl } from "../../utils/config";
+import { uploads, getImageUrl } from "../../utils/config";
 
 const Profile = () => {
   const [name, setName] = useState("");
