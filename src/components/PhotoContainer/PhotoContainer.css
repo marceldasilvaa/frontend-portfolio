@@ -5,6 +5,8 @@
 
 .showProjects img {
   width: 70%;
+  display: block;
+  margin: auto;
   border-radius: 5px;
 }
 
