@@ -16,6 +16,12 @@ const PhotoContainer = ({ photo }) => {
       <p id="userProject">
         Projeto de: <Link to={`/users/${photo.userId}`}>{photo.userName}</Link>
       </p>
+      <p id="link">
+        Acesse o projeto aqui:{" "}
+        <a href={photo.link} target="_blank" rel="noopener noreferrer">
+          {photo.title}
+        </a>
+      </p>
     </div>
   );
 };

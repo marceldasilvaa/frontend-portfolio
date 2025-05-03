@@ -13,6 +13,7 @@ import { resetMessage, postPhoto } from "../../slices/photoSlice";
 const PostProjects = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [link, setLink] = useState("");
   const [imageProject, setimageProject] = useState("");
 
   const { loading, error, message } = useSelector((state) => state.photo);
@@ -27,6 +28,7 @@ const PostProjects = () => {
     formData.append("title", title);
     formData.append("description", description);
     formData.append("image", imageProject);
+    formData.append("link", link)
 
     dispatch(postPhoto(formData));
 
@@ -72,6 +74,14 @@ const PostProjects = () => {
               type="text"
               onChange={(e) => setDescription(e.target.value)}
               value={description}
+            />
+          </label>
+          <label>
+            <span>Link do projeto</span>
+            <input
+              type="text"
+              onChange={(e) => setLink(e.target.value)}
+              value={link}
             />
           </label>
           {loading && (
